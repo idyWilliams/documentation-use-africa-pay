@@ -70,9 +70,9 @@ PAGES["overview"] = {
   title: "use-africa-pay",
   lede: "A unified, type-safe React hook for integrating African payment gateways — Paystack, Flutterwave, Monnify, and Remita — behind a single, consistent API.",
   badgesHtml: `<div class="lead-badges">
-    <img src="https://img.shields.io/npm/v/@use-africa-pay/core?style=flat-square&color=2451FF&label=npm" alt="npm version">
+    <img src="https://img.shields.io/npm/v/@use-africa-pay/core?style=flat-square&color=2D5A27&label=npm" alt="npm version">
     <img src="https://img.shields.io/npm/dw/@use-africa-pay/core?style=flat-square&color=E8A23D&label=weekly%20downloads" alt="weekly downloads">
-    <img src="https://img.shields.io/github/stars/idyWilliams/use-africa-pay?style=flat-square&color=2451FF&label=stars" alt="GitHub stars">
+    <img src="https://img.shields.io/github/stars/idyWilliams/use-africa-pay?style=flat-square&color=2D5A27&label=stars" alt="GitHub stars">
     <img src="https://img.shields.io/github/license/idyWilliams/use-africa-pay?style=flat-square&color=6B7078&label=license" alt="license">
   </div>`,
   html: `
@@ -1326,26 +1326,32 @@ PAGES["community"] = {
   <div class="stat-grid">
     <div class="stat-card">
       <div class="stat-label">GitHub stars</div>
-      <img src="https://img.shields.io/github/stars/idyWilliams/use-africa-pay?style=flat-square&color=2451FF&label=" alt="GitHub stars badge">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="var(--rail)"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      <img src="https://img.shields.io/github/stars/idyWilliams/use-africa-pay?style=flat-square&color=2D5A27&label=" alt="GitHub stars badge">
     </div>
     <div class="stat-card">
       <div class="stat-label">Forks</div>
-      <img src="https://img.shields.io/github/forks/idyWilliams/use-africa-pay?style=flat-square&color=2451FF&label=" alt="GitHub forks badge">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="var(--rail)"><path d="M6 2C4.9 2 4 2.9 4 4v7c0 1.1.9 2 2 2h1v4l2.5-2.5L12 17v-4h6c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2H6zm10 7H8V4h8v5z"/></svg>
+      <img src="https://img.shields.io/github/forks/idyWilliams/use-africa-pay?style=flat-square&color=2D5A27&label=" alt="GitHub forks badge">
     </div>
     <div class="stat-card">
       <div class="stat-label">npm weekly downloads</div>
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="var(--rail)"><path d="M4 4h16v16H4V4zm2 2v12h12V6H6zm2 2h8v8H8V8z"/></svg>
       <img src="https://img.shields.io/npm/dw/@use-africa-pay/core?style=flat-square&color=E8A23D&label=" alt="npm weekly downloads badge">
     </div>
     <div class="stat-card">
       <div class="stat-label">npm total downloads</div>
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="var(--rail)"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
       <img src="https://img.shields.io/npm/dt/@use-africa-pay/core?style=flat-square&color=E8A23D&label=" alt="npm total downloads badge">
     </div>
     <div class="stat-card">
       <div class="stat-label">Latest version</div>
-      <img src="https://img.shields.io/npm/v/@use-africa-pay/core?style=flat-square&color=2451FF&label=" alt="npm version badge">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="var(--rail)"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+      <img src="https://img.shields.io/npm/v/@use-africa-pay/core?style=flat-square&color=2D5A27&label=" alt="npm version badge">
     </div>
     <div class="stat-card">
       <div class="stat-label">License</div>
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="var(--rail)"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg>
       <img src="https://img.shields.io/github/license/idyWilliams/use-africa-pay?style=flat-square&color=6B7078&label=" alt="license badge">
     </div>
   </div>
@@ -1366,28 +1372,29 @@ PAGES["community"] = {
   </section>
 
   <section>
+  <h2 id="contributors">Contributors</h2>
+  <div class="callout">
+    <span class="callout-title">Join our contributors</span>
+    <p>This project is open to contributions from developers across Africa and beyond. Whether you're fixing bugs, adding features, improving documentation, or spreading the word — your help matters.</p>
+  </div>
+  <div class="stat-grid">
+    <div class="stat-card">
+      <div class="stat-label">Core Maintainer</div>
+      <div style="font-weight:600; color:var(--ink); margin-top:8px;">Idorenyin Williams</div>
+      <div style="font-size:12px; color:var(--muted); margin-top:4px;">Creator & Lead Developer</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Become a Contributor</div>
+      <div style="margin-top:8px;">
+        <a href="https://github.com/idyWilliams/use-africa-pay" target="_blank" rel="noopener" style="color:var(--rail); text-decoration:none; font-weight:500;">View on GitHub →</a>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <section>
   <h2 id="around-the-web">Around the web</h2>
-  <p>Real engagement from the project's own launch posts on LinkedIn and X — paraphrased and linked back to the source, not invented.</p>
-
-  <div class="community-post">
-    <div class="cp-head"><span class="cp-source">LinkedIn — launch post by Idorenyin Williams</span><span class="cp-date">133 reactions · 29 comments · 14 reposts · 8,201 impressions</span></div>
-    <p>A few of the standout replies:</p>
-    <ul style="margin:10px 0 0;">
-      <li><strong>Onyebuchi Okonkwo</strong>, Co-Founder of JustXpend AI, described migrating from Korapay to Flutterwave on a past project and having to rebuild the service and webhook handling from scratch — exactly the pain this SDK targets — and said he'd take a look.</li>
-      <li><strong>Ted Bankong</strong>, a full-stack engineer, called it useful for letting businesses switch providers without a rewrite.</li>
-      <li><strong>Evans Kwofie</strong> said he was mid-way through a payment integration and was glad it showed up on his feed.</li>
-      <li><strong>Oladapo Omonayajo</strong>, a senior software architect, asked how portable the hook's logic is beyond React; Williams confirmed the plan to extract the core into a framework-agnostic TypeScript class that Vue, Svelte, and plain JS could use, with the React hook becoming a thin wrapper.</li>
-      <li><strong>Olalekan Bolaji</strong> asked about a plain HTTP/API option for non-JS-framework projects; Williams said something more inclusive on that front is in progress.</li>
-    </ul>
-    <p style="margin-top:10px"><a href="https://www.linkedin.com/feed/update/urn:li:activity:7404948247620050944/" target="_blank" rel="noopener">View the post on LinkedIn →</a></p>
-  </div>
-
-  <div class="community-post">
-    <div class="cp-head"><span class="cp-source">X — launch thread by @iWil_Lian</span><span class="cp-date">Dec 2025</span></div>
-    <p><strong>Auwal MS</strong> (<a href="https://x.com/auwalms" target="_blank" rel="noopener">@auwalms</a>), Head of DevRel & Integrations at Moniepoint — the team behind Monnify, one of the four providers this SDK wraps — and a Google Developer Expert for Firebase, replied approvingly to the launch.</p>
-    <p><strong>Karan Jagtiani</strong> asked how it performs with lazy loading. Williams clarified that <code>useAfricaPay</code> doesn't load any provider SDK on mount — it only selects the correct adapter based on the provider passed in, and the actual script loads when a payment is initialized.</p>
-    <p style="margin-top:10px"><a href="https://x.com/iWil_Lian/status/1997489647564554662" target="_blank" rel="noopener">View the thread on X →</a></p>
-  </div>
+  <p>Real mentions and articles about use-africa-pay from developer communities and tech publications.</p>
 
   <div class="community-post">
     <div class="cp-head"><span class="cp-source">DEV Community — by Idorenyin Williams</span><span class="cp-date">dev.to</span></div>
@@ -1396,9 +1403,9 @@ PAGES["community"] = {
   </div>
 
   <div class="community-post">
-    <div class="cp-head"><span class="cp-source">LinkedIn — Enugu Gaming Conference (EGC2026)</span><span class="cp-date">2026</span></div>
-    <p>Idorenyin Williams was announced as a speaker/panelist at EGC2026, credited there as the creator and maintainer of <code>@use-africa-pay/core</code> and speaking on payment infrastructure reliability across African markets.</p>
-    <p style="margin-top:8px"><a href="https://www.linkedin.com/in/idorenyin-williams/" target="_blank" rel="noopener">View on LinkedIn →</a></p>
+    <div class="cp-head"><span class="cp-source">HackerNoon — Proof of Usefulness</span><span class="cp-date">5049 POU Score</span></div>
+    <p>use-africapay/core earns a 5049 Proof of Usefulness score by building a unified, type-safe payment SDK for Africa. This recognition highlights the practical impact and utility of the library in the African developer ecosystem.</p>
+    <p style="margin-top:8px"><a href="https://hackernoon.com/useafricapaycore-earns-a-5049-proof-of-usefulness-score-by-building-a-unified-type-safe-payment-sdk-for-africa" target="_blank" rel="noopener">Read the HackerNoon article →</a></p>
   </div>
   </section>
 
