@@ -491,7 +491,7 @@ function providerPage({name, color, required, optional, example, notes}){
 
 PAGES["provider-paystack"] = {
   kicker: "Providers", title: "Paystack", accent:"#0BA4DB",
-  lede: '<svg width="20" height="20" viewBox="0 0 24 24" fill="#0BA4DB" style="vertical-align:middle; margin-right:8px;"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15l-5-5 1.41-1.41L11 14.17l7.59-7.59L20 8l-9 9z"/></svg> Nigeria, Ghana, Kenya, South Africa · NGN, GHS, KES, USD, ZAR',
+  lede: '<img src="Paystack_Logo.png" alt="Paystack logo"> Nigeria, Ghana, Kenya, South Africa · NGN, GHS, KES, USD, ZAR',
   html: providerPage({
     name: "Paystack",
     required: [
@@ -527,7 +527,7 @@ initializePayment({
 
 PAGES["provider-flutterwave"] = {
   kicker: "Providers", title: "Flutterwave", accent:"#F5A623",
-  lede: '<svg width="20" height="20" viewBox="0 0 24 24" fill="#F5A623" style="vertical-align:middle; margin-right:8px;"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg> 30+ African countries · NGN, GHS, KES, USD, ZAR, XOF, XAF, and more',
+  lede: '<img src="Flutterwave_Logo.png" alt="Flutterwave logo"> 30+ African countries · NGN, GHS, KES, USD, ZAR, XOF, XAF, and more',
   html: providerPage({
     name: "Flutterwave",
     required: [
@@ -565,7 +565,7 @@ initializePayment({
 
 PAGES["provider-monnify"] = {
   kicker: "Providers", title: "Monnify", accent:"#7B5EF5",
-  lede: '<svg width="20" height="20" viewBox="0 0 24 24" fill="#7B5EF5" style="vertical-align:middle; margin-right:8px;"><path d="M4 4h16v16H4V4zm2 2v12h12V6H6zm2 2h8v8H8V8z"/></svg> Nigeria · NGN — strong bank transfer support',
+  lede: '<img src="monnify_long_logo_97b44bd036.png" alt="Monnify logo"> Nigeria · NGN — strong bank transfer support',
   html: providerPage({
     name: "Monnify",
     required: [
@@ -598,7 +598,7 @@ initializePayment({
 
 PAGES["provider-remita"] = {
   kicker: "Providers", title: "Remita", accent:"#1D8A5F",
-  lede: '<svg width="20" height="20" viewBox="0 0 24 24" fill="#1D8A5F" style="vertical-align:middle; margin-right:8px;"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg> Nigeria · NGN — common for government and enterprise payments',
+  lede: '<img src="remita.png" alt="Remita logo"> Nigeria · NGN — common for government and enterprise payments',
   html: providerPage({
     name: "Remita",
     required: [
@@ -1336,7 +1336,7 @@ PAGES["sandbox"] = {
   <div class="provider-grid">
     <div class="provider-card" style="--pc:#0BA4DB">
       <div class="pname">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="#0BA4DB"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15l-5-5 1.41-1.41L11 14.17l7.59-7.59L20 8l-9 9z"/></svg>
+        <img src="Paystack_Logo.png" alt="Paystack logo">
         Paystack
       </div>
       <p>Nigeria, Ghana, Kenya, South Africa · Test mode enabled</p>
@@ -1348,7 +1348,7 @@ PAGES["sandbox"] = {
     </div>
     <div class="provider-card" style="--pc:#F5A623">
       <div class="pname">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="#F5A623"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        <img src="Flutterwave_Logo.png" alt="Flutterwave logo">
         Flutterwave
       </div>
       <p>30+ African countries · Test mode enabled</p>
@@ -1360,7 +1360,7 @@ PAGES["sandbox"] = {
     </div>
     <div class="provider-card" style="--pc:#7B5EF5">
       <div class="pname">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="#7B5EF5"><path d="M4 4h16v16H4V4zm2 2v12h12V6H6zm2 2h8v8H8V8z"/></svg>
+        <img src="monnify_long_logo_97b44bd036.png" alt="Monnify logo">
         Monnify
       </div>
       <p>Nigeria · Bank transfer focus · Test mode enabled</p>
@@ -1371,7 +1371,7 @@ PAGES["sandbox"] = {
     </div>
     <div class="provider-card" style="--pc:#1D8A5F">
       <div class="pname">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="#1D8A5F"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg>
+        <img src="remita.png" alt="Remita logo">
         Remita
       </div>
       <p>Nigeria · Government/Enterprise · Test mode enabled</p>

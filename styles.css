@@ -274,6 +274,8 @@ tr:last-child td{ border-bottom:none; }
 }
 .provider-card .pname{ font-family:var(--font-head); font-weight:600; font-size:15px; display:flex; align-items:center; gap:8px; margin-bottom:4px;}
 .provider-card .pname svg{ flex-shrink:0; }
+.provider-card .pname img{ flex-shrink:0; object-fit:contain; max-height:24px; width:auto; }
+.content img[alt*="logo"]{ vertical-align:middle; margin-right:8px; object-fit:contain; max-height:30px; width:auto; }
 .provider-dot{ width:9px; height:9px; border-radius:50%; background:var(--pc,var(--rail)); display:inline-block; }
 .provider-card p{ font-size:13px; margin:0 0 8px; color:var(--muted); }
 .provider-card .ptags{ display:flex; gap:6px; flex-wrap:wrap; }
