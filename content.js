@@ -1493,10 +1493,6 @@ PAGES["community"] = {
       <img src="https://img.shields.io/github/license/idyWilliams/use-africa-pay?style=flat-square&color=6B7078&label=" alt="license badge">
     </div>
   </div>
-  <div class="callout">
-    <span class="callout-title">Why badges instead of a static number</span>
-    <p>These are live shields.io badges pulling directly from the GitHub and npm registry APIs, so this page never goes stale. As of this write-up: 69 stars, 9 forks, and versions <code>core@2.1.0</code>, <code>next@0.3.0</code>, and <code>react-native@0.1.2</code> — all published and installable.</p>
-  </div>
   </section>
 
   <section>
