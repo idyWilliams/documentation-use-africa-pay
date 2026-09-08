@@ -180,6 +180,7 @@ html[data-theme="dark"] .pill{ color:var(--gold); }
   padding:4px 10px; font-size:12px; color:var(--muted);
 }
 .pkg-row code{ color:var(--ink-soft); background:var(--border-soft); padding:1px 5px; border-radius:4px; }
+.pkg-row img{ flex-shrink:0; }
 
 .content{ padding:40px 48px 100px; min-width:0; }
 .toc{
@@ -272,6 +273,7 @@ tr:last-child td{ border-bottom:none; }
   border-radius:var(--radius-m); padding:16px; background:var(--surface);
 }
 .provider-card .pname{ font-family:var(--font-head); font-weight:600; font-size:15px; display:flex; align-items:center; gap:8px; margin-bottom:4px;}
+.provider-card .pname svg{ flex-shrink:0; }
 .provider-dot{ width:9px; height:9px; border-radius:50%; background:var(--pc,var(--rail)); display:inline-block; }
 .provider-card p{ font-size:13px; margin:0 0 8px; color:var(--muted); }
 .provider-card .ptags{ display:flex; gap:6px; flex-wrap:wrap; }

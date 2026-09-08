@@ -30,6 +30,7 @@ const NAV = [
     { slug: "security", title: "Security Best Practices" },
     { slug: "examples", title: "Examples" },
     { slug: "migration", title: "Migration Guide" },
+    { slug: "sandbox", title: "Sandbox" },
   ]},
   { group: "Reference", items: [
     { slug: "types", title: "Type Reference" },
@@ -490,7 +491,7 @@ function providerPage({name, color, required, optional, example, notes}){
 
 PAGES["provider-paystack"] = {
   kicker: "Providers", title: "Paystack", accent:"#0BA4DB",
-  lede: "Nigeria, Ghana, Kenya, South Africa · NGN, GHS, KES, USD, ZAR",
+  lede: '<svg width="20" height="20" viewBox="0 0 24 24" fill="#0BA4DB" style="vertical-align:middle; margin-right:8px;"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15l-5-5 1.41-1.41L11 14.17l7.59-7.59L20 8l-9 9z"/></svg> Nigeria, Ghana, Kenya, South Africa · NGN, GHS, KES, USD, ZAR',
   html: providerPage({
     name: "Paystack",
     required: [
@@ -526,7 +527,7 @@ initializePayment({
 
 PAGES["provider-flutterwave"] = {
   kicker: "Providers", title: "Flutterwave", accent:"#F5A623",
-  lede: "30+ African countries · NGN, GHS, KES, USD, ZAR, XOF, XAF, and more",
+  lede: '<svg width="20" height="20" viewBox="0 0 24 24" fill="#F5A623" style="vertical-align:middle; margin-right:8px;"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg> 30+ African countries · NGN, GHS, KES, USD, ZAR, XOF, XAF, and more',
   html: providerPage({
     name: "Flutterwave",
     required: [
@@ -564,7 +565,7 @@ initializePayment({
 
 PAGES["provider-monnify"] = {
   kicker: "Providers", title: "Monnify", accent:"#7B5EF5",
-  lede: "Nigeria · NGN — strong bank transfer support",
+  lede: '<svg width="20" height="20" viewBox="0 0 24 24" fill="#7B5EF5" style="vertical-align:middle; margin-right:8px;"><path d="M4 4h16v16H4V4zm2 2v12h12V6H6zm2 2h8v8H8V8z"/></svg> Nigeria · NGN — strong bank transfer support',
   html: providerPage({
     name: "Monnify",
     required: [
@@ -597,7 +598,7 @@ initializePayment({
 
 PAGES["provider-remita"] = {
   kicker: "Providers", title: "Remita", accent:"#1D8A5F",
-  lede: "Nigeria · NGN — common for government and enterprise payments",
+  lede: '<svg width="20" height="20" viewBox="0 0 24 24" fill="#1D8A5F" style="vertical-align:middle; margin-right:8px;"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg> Nigeria · NGN — common for government and enterprise payments',
   html: providerPage({
     name: "Remita",
     required: [
@@ -1316,6 +1317,143 @@ initializePayment({
   `
 };
 
+/* ---------------- SANDBOX ---------------- */
+PAGES["sandbox"] = {
+  kicker: "Guides", title: "Sandbox Environment",
+  lede: "Test all payment providers with pre-configured sandbox credentials — no setup required.",
+  html: `
+  <section>
+  <h2 id="what-is-sandbox">What is the sandbox?</h2>
+  <p>The sandbox is a testing environment that lets you try out use-africa-pay with all four providers using their test credentials. No real money is processed, and you can experiment with different configurations safely.</p>
+  <div class="callout">
+    <span class="callout-title">No API keys needed</span>
+    <p>The sandbox comes pre-configured with test credentials from each provider. You can start testing immediately without signing up for accounts.</p>
+  </div>
+  </section>
+
+  <section>
+  <h2 id="available-providers">Available providers</h2>
+  <div class="provider-grid">
+    <div class="provider-card" style="--pc:#0BA4DB">
+      <div class="pname">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="#0BA4DB"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15l-5-5 1.41-1.41L11 14.17l7.59-7.59L20 8l-9 9z"/></svg>
+        Paystack
+      </div>
+      <p>Nigeria, Ghana, Kenya, South Africa · Test mode enabled</p>
+      <div class="ptags">
+        <span class="tag">Test Card: 4242 4242 4242 4242</span>
+        <span class="tag">CVV: 123</span>
+        <span class="tag">Expiry: 12/25</span>
+      </div>
+    </div>
+    <div class="provider-card" style="--pc:#F5A623">
+      <div class="pname">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="#F5A623"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        Flutterwave
+      </div>
+      <p>30+ African countries · Test mode enabled</p>
+      <div class="ptags">
+        <span class="tag">Test Card: 4242 4242 4242 4242</span>
+        <span class="tag">CVV: 123</span>
+        <span class="tag">Expiry: 12/25</span>
+      </div>
+    </div>
+    <div class="provider-card" style="--pc:#7B5EF5">
+      <div class="pname">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="#7B5EF5"><path d="M4 4h16v16H4V4zm2 2v12h12V6H6zm2 2h8v8H8V8z"/></svg>
+        Monnify
+      </div>
+      <p>Nigeria · Bank transfer focus · Test mode enabled</p>
+      <div class="ptags">
+        <span class="tag">Test Account</span>
+        <span class="tag">Bank Transfer</span>
+      </div>
+    </div>
+    <div class="provider-card" style="--pc:#1D8A5F">
+      <div class="pname">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="#1D8A5F"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg>
+        Remita
+      </div>
+      <p>Nigeria · Government/Enterprise · Test mode enabled</p>
+      <div class="ptags">
+        <span class="tag">Test Account</span>
+        <span class="tag">Corporate</span>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <section>
+  <h2 id="quick-test">Quick test</h2>
+  <p>Here's a ready-to-use example with sandbox credentials:</p>
+  ${code('tsx','SandboxTest.tsx', `import { useAfricaPay, PaystackAdapter } from '@use-africa-pay/core';
+
+const SandboxTest = () => {
+  const { initializePayment, loading, error } = useAfricaPay();
+
+  const handleTestPayment = () => {
+    initializePayment({
+      provider: 'paystack',
+      adapter: PaystackAdapter,
+      publicKey: 'pk_test_xxxxxxxxxxxxxxxxxxxxx', // Sandbox key
+      amount: 50000, // ₦500 in kobo
+      currency: 'NGN',
+      reference: 'TEST_' + Date.now(),
+      user: {
+        email: 'test@example.com',
+        name: 'Test User',
+      },
+      testMode: true, // Explicitly enable test mode
+      onSuccess: (response) => {
+        console.log('Test payment successful:', response);
+      },
+      onError: (error) => {
+        console.error('Test payment failed:', error);
+      },
+    });
+  };
+
+  return (
+    <button onClick={handleTestPayment} disabled={loading}>
+      {loading ? 'Processing...' : 'Test Paystack Payment'}
+    </button>
+  );
+};`)}
+  </section>
+
+  <section>
+  <h2 id="test-cards">Test card details</h2>
+  <div class="table-wrap"><table>
+    <tr><th>Provider</th><th>Card Number</th><th>CVV</th><th>Expiry</th><th>Result</th></tr>
+    <tr><td>All providers</td><td>4242 4242 4242 4242</td><td>123</td><td>12/25</td><td>Success</td></tr>
+    <tr><td>All providers</td><td>4000 0000 0000 0002</td><td>123</td><td>12/25</td><td>Declined</td></tr>
+    <tr><td>All providers</td><td>4000 0000 0000 9995</td><td>123</td><td>12/25</td><td>Insufficient Funds</td></tr>
+  </table></div>
+  </section>
+
+  <section>
+  <h2 id="test-bank">Test bank transfer (Monnify)</h2>
+  <p>For Monnify bank transfer testing in sandbox:</p>
+  <ul>
+    <li>Use any valid Nigerian bank account number</li>
+    <li>Transfers will be automatically approved in test mode</li>
+    <li>No actual money is moved</li>
+  </ul>
+  </section>
+
+  <section>
+  <h2 id="next-steps">Next steps</h2>
+  <p>After testing in the sandbox:</p>
+  <ol>
+    <li>Sign up for production accounts with your chosen providers</li>
+    <li>Replace test keys with your live public keys</li>
+    <li>Set <code>testMode: false</code> in your configuration</li>
+    <li>Implement server-side payment verification</li>
+  </ol>
+  </section>
+  `
+};
+
 /* ---------------- COMMUNITY & STATS ---------------- */
 PAGES["community"] = {
   kicker: "Project", title: "Community & Stats",
@@ -1365,18 +1503,14 @@ PAGES["community"] = {
   <h2 id="packages">Package versions</h2>
   <div class="table-wrap"><table>
     <tr><th>Package</th><th>Version</th><th>npm</th></tr>
-    <tr><td><code>@use-africa-pay/core</code></td><td>2.1.0</td><td><a href="https://www.npmjs.com/package/@use-africa-pay/core" target="_blank" rel="noopener">view →</a></td></tr>
-    <tr><td><code>@use-africa-pay/next</code></td><td>0.3.0</td><td><a href="https://www.npmjs.com/package/@use-africa-pay/next" target="_blank" rel="noopener">view →</a></td></tr>
-    <tr><td><code>@use-africa-pay/react-native</code></td><td>0.1.2</td><td><a href="https://www.npmjs.com/package/@use-africa-pay/react-native" target="_blank" rel="noopener">view →</a></td></tr>
+    <tr><td><code>@use-africa-pay/core</code></td><td><img src="https://img.shields.io/npm/v/@use-africa-pay/core?style=flat-square&color=2D5A27&label=" alt="npm version"></td><td><a href="https://www.npmjs.com/package/@use-africa-pay/core" target="_blank" rel="noopener">view →</a></td></tr>
+    <tr><td><code>@use-africa-pay/next</code></td><td><img src="https://img.shields.io/npm/v/@use-africa-pay/next?style=flat-square&color=2D5A27&label=" alt="npm version"></td><td><a href="https://www.npmjs.com/package/@use-africa-pay/next" target="_blank" rel="noopener">view →</a></td></tr>
+    <tr><td><code>@use-africa-pay/react-native</code></td><td><img src="https://img.shields.io/npm/v/@use-africa-pay/react-native?style=flat-square&color=2D5A27&label=" alt="npm version"></td><td><a href="https://www.npmjs.com/package/@use-africa-pay/react-native" target="_blank" rel="noopener">view →</a></td></tr>
   </table></div>
   </section>
 
   <section>
   <h2 id="contributors">Contributors</h2>
-  <div class="callout">
-    <span class="callout-title">Join our contributors</span>
-    <p>This project is open to contributions from developers across Africa and beyond. Whether you're fixing bugs, adding features, improving documentation, or spreading the word — your help matters.</p>
-  </div>
   <div class="stat-grid">
     <div class="stat-card">
       <div class="stat-label">Core Maintainer</div>
